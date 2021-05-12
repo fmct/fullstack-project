@@ -1,0 +1,10 @@
+How to run in dev mode
+----------------------
+
+Run "npm install" inside this project folder to install all dependencies.
+
+Make sure you use the latest version of the CLI (see more at https://angular.io/cli/update)
+
+Run "ng serve" to see the app in action (you can also try "npm start" in case "ng serve" fails).
+
+Feel free to improve this project.
