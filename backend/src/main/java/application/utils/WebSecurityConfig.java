@@ -55,10 +55,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.authorizeRequests()
 				.antMatchers("/authenticate",
 						"/create", "/swagger-ui.html", "/webjars/**", "/v2/**",
-						"/swagger-resources/**").permitAll().
-				anyRequest().authenticated().and().
-				// session won't be used to store user's state.
-				exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
+						"/swagger-resources/**").permitAll()
+				.anyRequest().authenticated().and()
+				// session won't be used to store user's state
+				.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
 		// Add a filter to validate the token in every other request
