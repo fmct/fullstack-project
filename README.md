@@ -7,7 +7,7 @@ The backend Rest API is secured by using JWT and supports the basic CRUD operati
  * Retrieve a list of all products
  * Retrieve a single product
  * Update a product
- * Delete a product (soft deletion)
+ * Delete a product
  
 The Web application allows users to Login or Signup. And after this step (and only after) they can navigate trough the products section.
 
